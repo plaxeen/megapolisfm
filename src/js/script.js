@@ -27,7 +27,12 @@ function updateMediaSessionMetadata(artist, title) {
       artist: artist || 'Unknown Artist',
       album: 'MEGAPOLIS FM',
       artwork: [
-        { src: '../imgs/mgps.jpg', sizes: '640x640', type: 'image/jpeg' },
+        { src: '../imgs/mgps_96.png', sizes: '96x96', type: 'image/png' },
+        { src: '../imgs/mgps_128.png', sizes: '128x128', type: 'image/png' },
+        { src: '../imgs/mgps_192.png', sizes: '192x192', type: 'image/png' },
+        { src: '../imgs/mgps_256.png', sizes: '256x256', type: 'image/png' },
+        { src: '../imgs/mgps_384.png', sizes: '384x384', type: 'image/png' },
+        { src: '../imgs/mgps_512.png', sizes: '512x512', type: 'image/png' },
       ],
     });
 
