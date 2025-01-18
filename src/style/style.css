@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Wix Madefor Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: #fcf9f6;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.logo-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.play-container {
+  position: relative;
+}
+
+.play-button {
+	width: 70px;
+	height: 70px;
+	background: #e8412d;
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: transform,background 0.3s ease;
+	/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+}
+
+.volume-control {
+  position: absolute;
+  opacity: 0;
+  top: 130%;
+  left: -30%;
+  transform: translate(10px, -50%);
+  transition: opacity 0.3s cubic-bezier(.55,.09,.68,.53);
+  width: 100px;
+}
+
+.volume-control:hover {
+  opacity: 1;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background: #fbba5d;
+}
+
+.play-button:hover ~ .volume-control {
+  opacity: 1;
+}
+
+svg {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.track-info {
+  text-align: center;
+  font-size: 16pt;
+  color: #6b1226;
+  line-height: 0.8;
+  max-width: 300px;
+  text-wrap: wrap;
+}
+
+.artist {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: normal;
+}
+
+footer.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #e8412d;
+  color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-play-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-play-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.footer-play-button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-volume-control {
+  width: 100px;
+}
+
+.footer-track-info {
+  text-align: right;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .play-container {
+    display: none; 
+  }
+  .track-info {
+    display: none; 
+  }
+  footer.footer {
+    display: flex;
+  }
+}
