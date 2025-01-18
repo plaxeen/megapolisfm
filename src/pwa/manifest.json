@@ -1,0 +1,64 @@
+{
+  "name": "MEGAPOLIS",
+  "lang": "EN",
+  "short_name": "MGPS",
+  "app_name": "Radio MEGAPOLIS",
+  "description": "Internet radio music non-stop",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#e8412d",
+  "icons": [
+    {
+      "src": "../imgs/mgps_72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "../imgs/mgps_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
